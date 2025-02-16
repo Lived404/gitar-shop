@@ -1,4 +1,4 @@
-class LocalStorageutill {
+class LocalStorageUtil {
     constructor() {
         this.keyName = 'products'
     }
@@ -14,7 +14,7 @@ class LocalStorageutill {
     putProducts(id) {
         let products = this.getProducts()
         let pushProduct = false;
-        const index = products.indrxOf(id);
+        const index = products.indexOf(id);
 
         if(index === -1) {
             products.push(id);
@@ -31,4 +31,4 @@ class LocalStorageutill {
     }
 }
 
-const localStorageutill = new LocalStorageutill();
+const localStorageUtil = new LocalStorageUtil();
