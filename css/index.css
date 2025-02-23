@@ -2,11 +2,25 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-dark);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-white);
+}
+
 :root {
     --color-light: #f8f9fa;
     --color-white: #fff;
     --color-unaccent: #808080;
     --color-medium: #ddd;
+    --color-dark: #a1a1a1;
 
     --spacing-small: 10px;
     --spacing-medium: 15px;

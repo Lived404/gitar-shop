@@ -1,5 +1,10 @@
 class Shopping {
 
+
+    handlerClose() {
+        ROOT_SHOPPING.innerHTML = '';
+    }
+
     render() {
 
         const productsStore = localStorageUtil.getProducts();
@@ -21,6 +26,7 @@ class Shopping {
 
         const html = `
             <div class="shopping-container">
+            <div class="shopping__close" onclick="shoppingPage.handlerClose()"></div>
                 <table>
                     ${htmlCatalog}
                     <tr>
