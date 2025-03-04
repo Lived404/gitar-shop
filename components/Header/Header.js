@@ -7,6 +7,7 @@ class Header {
     render(count) {
         const html = `
             <div class="header-container">
+                <div>LOGO</div>
                 <div class="header-counter" onclick="headerPage.handleOpenShoppingPage()">
                     🔥${count}
                 </div>
